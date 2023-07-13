@@ -1,0 +1,81 @@
+
+
+<html>
+<head>
+<style>
+table {
+border-collapse: collapse;
+}
+th,
+td {
+border: 1px solid #c6c7cc;
+padding: 10px 15px;
+}
+th {
+font-weight: bold;
+}
+table.scroll {
+width: 716px; 
+border-spacing: 0;
+border: 2px solid black;
+}
+table.scroll tbody,
+table.scroll thead tr { display: block; }
+table.scroll tbody {
+height: 100px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+table.scroll tbody td,
+table.scroll thead th {
+width: 140px;
+border-right: 1px solid black;
+}
+table.scroll thead th:last-child {
+width: 156px; /* 140px + 16px scrollbar width */
+}
+thead tr th {
+height: 30px;
+line-height: 30px;
+/*text-align: left;*/
+}
+tbody { border-top: 2px solid black; }
+tbody td:last-child, thead th:last-child {
+border-right: none !important;
+}
+</style>
+</head>
+<table class="scroll">
+<thead>
+<tr>
+<th scope="col" colspan="1">File Name</th>
+<th scope="col">Top words</th>
+<th scope="col">Confidence Level (1-5)</th>
+<th scope="col">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File A</td>
+<td>Moscow,loan, gold, account </td>
+<td>5</td>
+<td> <a href="https://www.officetooltips.com/word_365/tips/insert_an_email_hyperlink_in_a_document.html">File A</a> </td>
+
+</tr>
+<tr>
+<td>File B</td>
+<td> payments, account</td>
+<td>2</td>
+<td> <a href="https://www.officetooltips.com/word_365/tips/insert_an_email_hyperlink_in_a_document.html">File B</a> </td>
+
+</tr>
+<tr>
+<td>File C</td>
+<td>Iran, trade, oil </td>
+<td>4</td>
+<td> <a href="https://www.officetooltips.com/word_365/tips/insert_an_email_hyperlink_in_a_document.html">File C</a> </td>
+
+</tr>
+</tbody>
+</table>
+</html>
